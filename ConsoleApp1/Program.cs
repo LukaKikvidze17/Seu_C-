@@ -6,12 +6,19 @@ namespace MyNamespace
     {
         static void Main()
         {
-            Console.Write("x = ");
-            double x = Convert.ToDouble(Console.ReadLine());
-            Console.Write("z = ");
-            double z = Convert.ToDouble(Console.ReadLine());
-            double y = (Math.Abs(x) - Math.Abs(z)) / (1 + Math.Log(x));
-            Console.WriteLine($"y = {y}");
+            Console.Write("U = ");
+            double U = Convert.ToDouble(Console.ReadLine());
+            Console.Write("R = ");
+            double R = Convert.ToDouble(Console.ReadLine());
+            if (R == 0)
+            {
+                Console.WriteLine("ნულზე გაყოფა არ შეიძლება");
+            }
+            else
+            {
+                double J = U / R;
+                Console.WriteLine($"J = {J}");
+            }
         }
     }
 };
