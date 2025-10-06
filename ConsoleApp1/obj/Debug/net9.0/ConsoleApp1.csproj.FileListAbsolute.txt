@@ -12,3 +12,4 @@
 /home/ngroot/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
 /home/ngroot/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
 /home/ngroot/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
+/home/ngroot/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.sourcelink.json
