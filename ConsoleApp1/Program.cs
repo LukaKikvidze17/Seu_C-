@@ -6,10 +6,11 @@ namespace MyNamespace
     {
         static void Main()
         {
-            Console.Write("X = ");
+            Console.Write("x = ");
             double x = Convert.ToDouble(Console.ReadLine());
-            double y = (Math.Pow(Math.Sin(x), 3) + Math.Pow(Math.Cos(x), 12)) / Math.Exp(Math.Sqrt(x));
+            double y = 1 + Math.Abs(x) + (1 + Math.Abs(x));
             Console.WriteLine($"y = {y}");
         }
     }
 };
+
