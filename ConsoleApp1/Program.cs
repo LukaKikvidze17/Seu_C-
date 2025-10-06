@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Numerics;
 
 namespace MyNamespace
 {
@@ -7,10 +6,10 @@ namespace MyNamespace
     {
         static void Main()
         {
-            Console.Write("x = ");
+            Console.Write("X = ");
             double x = Convert.ToDouble(Console.ReadLine());
-            double y = Math.Sqrt(1 + Math.Sqrt(Math.Abs(x)));
-            Console.WriteLine("y == " + y);
+            double y = (Math.Pow(Math.Sin(x), 3) + Math.Pow(Math.Cos(x), 12)) / Math.Exp(Math.Sqrt(x));
+            Console.WriteLine($"y = {y}");
         }
     }
-}; 
+};
