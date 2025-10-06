@@ -8,7 +8,9 @@ namespace MyNamespace
         {
             Console.Write("x = ");
             double x = Convert.ToDouble(Console.ReadLine());
-            double y = 1 + Math.Abs(x) + (1 + Math.Abs(x));
+            Console.Write("z = ");
+            double z = Convert.ToDouble(Console.ReadLine());
+            double y = (Math.Abs(x) - Math.Abs(z)) / (1 + Math.Log(x));
             Console.WriteLine($"y = {y}");
         }
     }
