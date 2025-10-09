@@ -1,24 +1,18 @@
 ﻿using System;
 
-namespace MyNamespace
+namespace ConsoleApp1
 {
     class Program
     {
         static void Main()
         {
-            Console.Write("U = ");
-            double U = Convert.ToDouble(Console.ReadLine());
-            Console.Write("R = ");
-            double R = Convert.ToDouble(Console.ReadLine());
-            if (R == 0)
-            {
-                Console.WriteLine("ნულზე გაყოფა არ შეიძლება");
-            }
-            else
-            {
-                double J = U / R;
-                Console.WriteLine($"J = {J}");
-            }
+            bool x1 = false;
+            bool x2 = false;
+            bool x3 = true;
+            bool x4 = true;
+
+            bool y = (x1 || !x2) && (x3 || x4);
+            Console.WriteLine(y);
         }
     }
 };
