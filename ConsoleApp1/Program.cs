@@ -1,19 +1,29 @@
 ﻿using System;
 
-namespace ConsoleApp1
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        Console.Write("x = ");
+        string text = Console.ReadLine();
+        if (double.TryParse(text, out double number))
         {
-            bool x1 = false;
-            bool x2 = false;
-            bool x3 = true;
-            bool x4 = true;
-
-            bool y = (x1 || !x2) && (x3 || x4);
-            Console.WriteLine(y);
+            if (number > 0)
+            {
+                Console.WriteLine("რიცხვი დადებითია");
+            }
+            else if (number < 0)
+            {
+                Console.WriteLine("რიცხვი უარყოფითია");
+            }
+            else
+            {
+                Console.WriteLine("რიცხვი 0-ის ტოლია");
+            }
+        }
+        else
+        {
+            Console.WriteLine("ჩაწერი მხოლოდ რიცხვი");
         }
     }
-};
-
+}
